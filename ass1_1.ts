@@ -1,27 +1,15 @@
-/*
-Write a typescript program which contains one function named as Maximum. That function accepts
-three parameters and it should returns largest value from three input parameters.
-Input : 23 89 6
-Output : Maximum number is 89
-*/
-function maxi(no1:number,no2:number,no3:number):number
+function divide( ino1:number, ino2:number)
 {
-    if(no1>no2)
+    var ans:number=0
+    if(ino2==0)
     {
-        return no1;
+        return -1;
     }
-    else if(no2>no3)
-    {
-        return no2;
-    }
-    else
-    {
-        return no3;
-    }
+    ans=ino1/ino2;
+    return ans;
 }
-var i:number=23;
-var j:number=89;
-var k:number=6;
-var ret:number=0;
-ret=maxi(i,j,k);
-console.log("maximum number is: ",ret);
+var ivalue1=15,ivalue2=5;
+var iret =0;
+iret=divide(ivalue1,ivalue2);
+console.log("Division is : ",iret);
+
